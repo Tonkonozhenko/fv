@@ -1,5 +1,9 @@
-require "fv/version"
+require 'fv/version'
+require 'fv/v'
+require 'fv/parser'
 
 module Fv
-  # Your code goes here...
+  def self.parse(version)
+    Parser.parse(version)
+  end
 end
