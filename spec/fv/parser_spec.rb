@@ -5,7 +5,7 @@ describe Fv::Parser do
     subject { described_class.parse(version) }
 
     context 'valid args' do
-      shared_examples 'parsing' do |input:, result:|
+      shared_examples 'parsing' do |input: nil, result: nil|
         let(:version) { input }
         specify "for input #{input.inspect} as #{result.inspect}" do
           expect(subject.parts).to eq(result)
@@ -21,7 +21,7 @@ describe Fv::Parser do
     end
 
     context 'invalid args' do
-      shared_examples 'raising error' do |input:, error:|
+      shared_examples 'raising error' do |input: nil, error: nil|
         let(:version) { input }
         specify "for input #{input.inspect}" do
           expect { subject }.to raise_error(error)

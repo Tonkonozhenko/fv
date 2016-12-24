@@ -62,7 +62,7 @@ describe Fv::V do
   end
 
   describe '#<=>' do
-    shared_examples 'comparing' do |l:, r:, result:|
+    shared_examples 'comparing' do |l: nil, r: nil, result: nil|
       subject do
         x = Fv(l) <=> Fv(r)
         x.itself

@@ -1,4 +1,4 @@
-# Fv
+# Fv [![Build Status](https://travis-ci.org/Tonkonozhenko/fv.svg?branch=master)](https://travis-ci.org/Tonkonozhenko/fv)
 
 Fv is gem for fast operations with version numbers
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Comparing versions became as easy as never. It takes `4` chars more than comparing strings.
+Comparing versions became as easy as never. It takes only `4 chars` more than comparing strings.
 
 ```ruby
 

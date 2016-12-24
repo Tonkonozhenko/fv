@@ -18,7 +18,7 @@ module Fv
       end
 
       private
-      def validate_part(part, name:, only_integer: true, non_negative: true)
+      def validate_part(part, name: nil, only_integer: true, non_negative: true)
         name = name.capitalize
         is_integer = true
 
