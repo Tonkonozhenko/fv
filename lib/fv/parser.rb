@@ -31,7 +31,7 @@ module Fv
           part
         end
 
-        if only_integer && non_negative && part.negative?
+        if only_integer && non_negative && part < 0
           raise WrongVersionError, "#{name} version cannot be negative"
         end
 

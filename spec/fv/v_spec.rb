@@ -63,10 +63,7 @@ describe Fv::V do
 
   describe '#<=>' do
     shared_examples 'comparing' do |l: nil, r: nil, result: nil|
-      subject do
-        x = Fv(l) <=> Fv(r)
-        x.itself
-      end
+      subject { Fv(l) <=> Fv(r) }
       it "#{l.inspect} and #{r.inspect}" do
         is_expected.to eq(result)
       end
