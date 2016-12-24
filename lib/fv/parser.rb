@@ -25,7 +25,7 @@ module Fv
         part = begin
           Integer(part)
         rescue ArgumentError => e
-          raise unless e.message =~ /invalid value for Integer\(\):/
+          raise unless e.message =~ /invalid value for Integer/
           raise WrongVersionError, "#{name} version must be integer" if only_integer
           is_integer = false # Allow part to be not an integer
           part
